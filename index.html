@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Metrozo Ads</title>
+<style>
+html,body{margin:0;height:100%;background:#0F1B3C;overflow:hidden}
+#box{position:fixed;inset:0;overflow:hidden}
+/* HIDE_BANNER: Google's "created by an Apps Script user" bar is ~44px tall. A negative top pulls it out of view. Set to 0 to show it. */
+iframe{position:absolute;left:0;width:100%;border:0;top:-44px;height:calc(100% + 44px)}
+</style>
+</head>
+<body>
+<div id="box">
+<!-- 1) Replace the URL below with your Apps Script web app URL (ends with /exec) -->
+<iframe id="app"
+  src="https://script.google.com/macros/s/AKfycbxUNLqSBXRTQSS34wmnxEmZTDxTGmH0GFHnQdS8NE3bE6dMTL3y3kcI0QEZdFIBAVUK4A/exec"
+  allow="geolocation *; camera *; microphone *; clipboard-read *; clipboard-write *; autoplay *; fullscreen *"
+  allowfullscreen></iframe>
+</div>
+</body>
+</html>
